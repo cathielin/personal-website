@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import CenterCard from './components/CenterCard/CenterCard.js';
+import IconWithLabel from './components/IconWithLabel/IconWithLabel.js';
+import MoodBar from './components/MoodBar/MoodBar.js';
+import Modal from './components/Modal/Modal.js';
+
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main-app">
+      <div className="test-modal">
+        <Modal />
+      </div>
+      <div className="center-pic">
+        <CenterCard />
+        <div className="resume-icon">
+        <IconWithLabel />
+      </div>
+      </div>
+      <div className="mood">
+        <MoodBar />
+      </div>
+      
+      
+      {/* <div className="resume-icon">
+        <IconWithLabel />
+      </div> */}
+      
+      {/* <MoodBar /> */}
     </div>
   );
 }

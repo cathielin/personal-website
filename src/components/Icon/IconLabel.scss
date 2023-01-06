@@ -1,0 +1,39 @@
+.label::before {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    // margin-left: -5px;
+    
+    border-width: 13px;
+    border-style: dashed;
+    
+    border-color: black transparent transparent transparent;
+}
+
+.label::after {
+    content: " ";
+    z-index: 1;
+    position: absolute;
+    top: calc(100% - 1px); /* At the bottom of the tooltip */
+    left: calc(50% + 3px);
+    border-width: 10px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+.label {
+    position: relative;
+    max-width: 200px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    outline: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.label-text {
+    flex-grow: 1;
+    text-align: center;
+}

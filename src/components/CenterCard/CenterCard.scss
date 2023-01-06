@@ -1,0 +1,48 @@
+.card {
+    position: relative;
+    background-color: white;
+    margin: auto;
+    outline: 3px solid black;
+    
+    border-radius: 15px;
+
+    min-height: 400px;
+    min-width: 100px;
+    max-width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+}
+
+
+ 
+
+.card-header {
+    
+    flex-basis: 8%;
+    flex-shrink: 0;
+    padding-top: 8px;
+    padding-left: 8px;
+    
+    background-color: pink;
+    border-bottom: 3px solid red;
+    border-bottom-color: red;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+
+}
+.card-content {
+    
+    flex-grow: 1;
+    display: flex;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+.sushi-image {
+    align-items: center;
+    object-fit: contain;
+    justify-content: center;
+    max-width: 100%;
+}

@@ -1,0 +1,32 @@
+@keyframes buttonhover {
+    from {
+      background-color: pink;
+    }
+  
+    to {
+      background-color: red;
+    }
+}
+
+.button {
+    background-color: pink;
+    border-radius: 8px;
+    outline: 3px solid black;
+    max-width: 100px;
+    max-height: 50px;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    transition: background-color 500ms;
+
+}
+
+.button:hover {
+    background-color: red;
+    
+
+}
+

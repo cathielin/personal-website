@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: 600;
+  background-color: lightsteelblue;
+  height: 100%;
+}
+.main-app {
+  
+}
+
+.center-pic {
+  position: relative;
+  margin: auto;
+  margin-top: 10%;
+  width: 50%;
+
+  min-height: 500px;
+  align-items: center;
+  justify-content: center;
+  /* background-color: white; */
+  /* opacity: 20%; */
+}
+
+.resume-icon {
+  z-index: 1;
+  position: sticky;
+  bottom: 500px;
+  left: -20px;
+  max-height: 200px;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  
+}
+
+.mood {
+  margin: auto;
+  margin-top: -12%;
+  max-width: 400px;
+  min-height: 50px;
+  max-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.test-modal {
+  position: relative;
+}
