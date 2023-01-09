@@ -1,0 +1,49 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+
+}
+
+.section-header {
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: pink;
+    max-width: 50%;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
+.section-text {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 400;
+}
+
+.double-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.left-list {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+
+.right-list {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+.modal-text {
+
+}
+.modal-image {
+    
+    
+}

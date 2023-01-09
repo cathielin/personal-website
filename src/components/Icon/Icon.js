@@ -4,11 +4,14 @@ import './Icon.scss';
 import { ReactComponent as Strawberry } from '../../images/icon-images/strawberryduo.svg';
 
 function Icon(props) {
-    const { className } = props;
+    const {className, handlerFunction, iconImage } = props;
 
+    const test = () => {
+        handlerFunction();
+    }
     return (
-        <div className={classnames(className, "icon")}>
-            <Strawberry width="150px" height="150px" />
+        <div onClick={test} className={classnames(className, "icon")}>
+            {iconImage}
         </div>
     )
 }

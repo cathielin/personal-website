@@ -4,10 +4,10 @@ import './IconLabel.scss';
 
 function IconLabel(props) {
 
-    const { className } = props;
+    const { className, iconLabel } = props;
     return (
         <div  className={classNames(className, "label")}>
-            <div className="label-text" >i'm a label</div>
+            <div className="label-text" >{iconLabel}</div>
         </div>
     )
 }

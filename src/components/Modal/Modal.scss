@@ -1,23 +1,55 @@
+*::-webkit-scrollbar {
+    width: 5px; 
+}
+  
+*::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+  }
+  
+*::-webkit-scrollbar-thumb {
+    background-color: pink;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 1px solid white; /* creates padding around scroll thumb */
+    
+  }
+* {
+    scrollbar-width: thin;
+    scrollbar-color: pink;
+}
+
+.modal-container {
+    position: relative;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    // min-height: 200px;
+    // max-height: 200px;
+}
+
 .modal {
     position: absolute;
     background-color: white;
+    
     z-index: 10;
     width: 500px;
     height: 500px;
-    overflow: auto;
+    margin: auto;
+    
     outline: 3px solid black;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
+    bottom: -50px;    
+    
 }
 
 
 .modal-header {
     flex-basis: 8%;
     flex-shrink: 0;
+    text-align: center;
     padding-top: 8px;
-    padding-left: 8px;
+    // padding-left: 20px;
     
     background-color: pink;
     border-bottom: 3px solid red;
@@ -30,12 +62,72 @@
     flex-grow: 1;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    overflow: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 20px;
+    padding: 10px;
 }
 
+
+.modal-text {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    row-gap: 15px;
+    overflow: auto;
+}
+
+  
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+
+}
+
+.section-header {
+    border: 3px solid black;
+    border-radius: 8px;
+    background-color: pink;
+    max-width: 50%;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+}
+
+.section-text {
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 400;
+}
+
+.double-list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+.left-list {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+
+.right-list {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+
+}
+.modal-text {
+
+}
 .modal-image {
     
     

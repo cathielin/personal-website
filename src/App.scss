@@ -5,9 +5,18 @@ body {
   font-weight: 600;
   background-color: lightsteelblue;
   height: 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+
 .main-app {
-  
+  position: relative;
 }
 
 .center-pic {
@@ -25,14 +34,16 @@ body {
 
 .resume-icon {
   z-index: 1;
-  position: sticky;
-  bottom: 500px;
-  left: -20px;
+  position: absolute;
+  // bottom: 500px;
+  // left: -20px;
+  bottom: 200px;
+  left: 500px;
   max-height: 200px;
   max-width: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   width: 200px;
   height: 200px;
   
@@ -40,7 +51,7 @@ body {
 
 .mood {
   margin: auto;
-  margin-top: -12%;
+  margin-top: -5%;
   max-width: 400px;
   min-height: 50px;
   max-height: 100px;
@@ -51,4 +62,24 @@ body {
 }
 .test-modal {
   position: relative;
+}
+
+.double-list {
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.left-list {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+}
+
+.right-list {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
 }

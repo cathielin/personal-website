@@ -2,38 +2,36 @@ import React, {useState} from 'react';
 
 import './Modal.scss';
 import Button from '../Button/Button.js';
+import IconWithLabel from '../IconWithLabel/IconWithLabel.js';
 import {ReactComponent as Strawberry} from '../../images/icon-images/strawberryduo.svg';
 
-function Modal() {
+function Modal(props) {
+
+    const { title, iconImage, iconLabel } = props;
+   
     const [openModal, setOpenModal] = useState(false);
 
     const handleOpen = () => {
         setOpenModal(true);
-        console.log("open the modal")
     }
 
     const handleClose = () => {
         setOpenModal(false);
-        console.log("close modal");
     }
-
     return (
         <React.Fragment>
-            {/* <button onClick={handleOpen} >open modal</button> */}
-            <Button handlerFunction={handleOpen} buttonText="button"/>
+            <IconWithLabel iconImage={iconImage} iconLabel={iconLabel} handlerFunction={handleOpen} />
             {openModal && 
                 <div className="modal">
                     <div className="modal-header">
-                        Resume
+                        {title}
                     </div>
                     <div className="modal-content">
-                        <div className="modal-image">
-                            <Strawberry  height="200" width="200" />
+                        <div className="modal-text">
+                            {props.children}
                         </div>
                         <Button handlerFunction={handleClose} buttonText="exit"/>
-
                     </div>
-                    
                 </div> 
             }
         </React.Fragment>
