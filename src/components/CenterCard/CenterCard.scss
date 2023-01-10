@@ -1,7 +1,8 @@
 .card {
-    position: relative;
+    flex-grow: 1;
     background-color: white;
-    margin: auto;
+    // margin: auto;
+    
     outline: 3px solid black;
     
     border-radius: 15px;
@@ -23,11 +24,10 @@
     flex-basis: 8%;
     flex-shrink: 0;
     padding-top: 8px;
-    padding-left: 8px;
-    
-    background-color: pink;
-    border-bottom: 3px solid red;
-    border-bottom-color: red;
+    text-align: center;
+    background-color: #F2CBCB;
+    border-bottom: 3px solid #D499A4;
+    border-bottom-color: #D499A4;
     border-top-left-radius: 13px;
     border-top-right-radius: 13px;
 
@@ -40,9 +40,10 @@
     border-bottom-right-radius: 15px;
     
 }
-.sushi-image {
+.me-image {
     align-items: center;
     object-fit: contain;
     justify-content: center;
-    max-width: 100%;
+    margin: auto;
+    max-width: 75%;
 }

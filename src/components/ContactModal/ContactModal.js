@@ -1,41 +1,29 @@
 import React from 'react';
 import Modal from '../Modal/Modal.js';
 import ModalSection from '../ModalSection/ModalSection.js';
-import {ReactComponent as Strawberry} from '../../images/icon-images/strawberryduo.svg';
+import {ReactComponent as Flowers } from '../../images/icon-images/flowers.svg';
 
 const ContactModal = () => {
-    const StrawberryImage = () => { 
-        return <Strawberry width="150px" height="200px" />
+    const IconImage = () => { 
+        return <Flowers width="150px" height="200px" />
     }
 
     return (
-        <Modal title="Contact Me" iconImage={StrawberryImage()} iconLabel="contact me">
+        <Modal className="contact" title="contact" iconImage={IconImage()} iconLabel="contact me">
                 <ModalSection title="fastest contact">
                 <div>
-                - <b>email: </b>cathielin@berkeley.edu
+                ★ <b>email: </b>cathielin@berkeley.edu
                 </div>
                 </ModalSection>
-                <ModalSection title="social media">
+                <ModalSection title="social media & misc">
                 <div>
-                - linkedin
-                - github
+                ★ <a href="https://www.linkedin.com/in/cathie-lin/" target="_blank" rel="noreferrer">linkedin</a> <br/>
+                ★ <a href="https://github.com/cathielin/" target="_blank" rel="noreferrer">github</a> <br/>
+                ★ <a href="https://open.spotify.com/user/boxofnothing" target="_blank" rel="noreferrer">spotify</a> 
+
                 </div>
                 </ModalSection>
-                <ModalSection 
-                    title="spotify"
-                >
-                <div className="double-list">
-                    <div className="left-list">
-                        - react<br/>
-                        - javascript <br />
-                        - html/css <br/>
-                    </div>
-                    <div className="right-list">
-                        - java <br/>
-                        - python <br />
-                    </div>
-                </div>
-                </ModalSection>
+                
             </Modal>
     )
 }

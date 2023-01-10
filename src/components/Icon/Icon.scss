@@ -1,6 +1,31 @@
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .icon {
     background-color: none;
-    min-height: 200px;
+    min-height: 100px;
     max-height: 200px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+    animation-timing-function: cubic-bezier(-6.4, 0.72, -8.265, -2.955);
+    transition-timing-function: ease;
+
 }
+
+.icon:hover {
+    animation-play-state: running;
+}
+
 

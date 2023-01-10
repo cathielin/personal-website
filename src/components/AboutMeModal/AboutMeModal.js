@@ -1,18 +1,17 @@
 import React from "react";
 import Modal from "../Modal/Modal.js";
 import ModalSection from "../ModalSection/ModalSection.js";
-import { ReactComponent as Flowers } from "../../images/icon-images/flowers.svg";
-
+import {ReactComponent as RightArrowHeart }  from "../../images/icon-images/rightarrowheart.svg";
 const AboutMeModal = () => {
-  const FlowerImage = () => {
-    return <Flowers width="150px" height="200px" />;
+  const IconImage = () => {
+    return <RightArrowHeart width="150px" height="200px" />;
   };
 
   return (
-    <Modal title="about me" iconImage={FlowerImage()} iconLabel="about me">
+    <Modal className="about" title="About Me" iconImage={IconImage()} iconLabel="about">
       <ModalSection title="about me">
         <div>
-          Hi, my name is cathie! I'm currently a 4th year at UC Berkeley
+          Hi, my name is Cathie! I'm currently a 4th year at UC Berkeley
           studying Electrical Engineering and Computer Science and also an aspiring
           frontend web developer.
         </div>
@@ -30,28 +29,28 @@ const AboutMeModal = () => {
       <ModalSection title="stats">
         <div className="double-list">
             <div className="left-list">
-                - level: 21 <br />
-                - hp: 155 <br />
-                - star sign: taurus <br />
+              ★ level: 21 <br />
+              ★ hp: 155 <br />
+              ★ star sign: taurus <br />
             </div>
             <div className="right-list">
-                - typing speed: 150 wpm <br />
-                - favorite color: green <br />
-                - mbti: enfp
+              ★ typing speed: 150 wpm <br />
+              ★ favorite color: green <br />
+              ★ mbti: enfp
             </div>
         </div>
       </ModalSection>
       <ModalSection title="hobbies & interests">
         <div className="double-list">
             <div className="left-list">
-                - coding <br />
-                - drawing <br />
-                - taylor swift's discography <br />
+              ★ coding <br />
+              ★ drawing <br />
+              ★ taylor swift's discography <br />
             </div>
             <div className="right-list">
-                - journaling <br />
-                - thrifting <br />
-                - sending cat videos to my boyfriend <br />
+              ★ journaling <br />
+              ★ thrifting <br />
+              ★ sending cat videos to my boyfriend <br />
             </div>
         </div>
       </ModalSection>

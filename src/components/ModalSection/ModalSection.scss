@@ -1,6 +1,7 @@
 .section {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     row-gap: 3px;
 
 }
@@ -8,7 +9,7 @@
 .section-header {
     border: 3px solid black;
     border-radius: 8px;
-    background-color: pink;
+    background-color: #F2CBCB;
     max-width: 50%;
     text-align: center;
     padding-top: 3px;
@@ -40,10 +41,26 @@
     flex-direction: column;
 
 }
-.modal-text {
-
+@media screen and (max-width: 992px ) {
+    .section-header {
+        max-width: 100%;
+    }
+    .double-list {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0px;
+        row-gap: 5px;
+    }
 }
-.modal-image {
-    
-    
+
+@media screen and (max-width: 600px) {
+    .section-header {
+        max-width: 100%;
+    }
+    .double-list {
+        display: flex;
+        flex-direction: column;
+        column-gap: 0px;
+        row-gap: 5px;
+    }
 }

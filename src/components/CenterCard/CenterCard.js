@@ -1,23 +1,16 @@
 import React from 'react';
 import './CenterCard.scss';
-import sushi from '../../images/icon-images/sushi.png';
-
+import me from '../../images/icon-images/me.jpg';
 function CenterCard() {
     return (
-        // <div className="card-border">
         <div className="card">
-           
                 <div className="card-header">
-                    cathie-lin.png
+                    cathie lin
                 </div>
                 <div className="card-content">
-                    <img className="sushi-image" src={sushi} />
-
+                    <img className="me-image" src={me} alt="me"/>
                 </div>
-
-            
         </div>
-        // </div>
     )
 }
 

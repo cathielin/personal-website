@@ -1,20 +1,58 @@
 .container {
     height: 100%;
     width: 100%;
-    // position: relative;
-    // flex-grow: 1;
-    // height: 100%;
-    // // min-height: 200px;
-    // // max-height: 200px;
+    z-index: 1;
 }
 
-.test {
+.icon {
     position: absolute;
     width: 100%;
 }
 
-.test-label {
+.left-label {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    min-width: 50px;
+    width: 100px;
+}
+
+.resume {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    min-width: 50px;
+    width: 100px;
+}
+
+.about {
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    min-width: 50px;
+    width: 100px;
+}
+
+.contact {
     position: absolute;
     top: -10px;
+    left: -25px;
+    min-width: 50px;
+    width: 100px;
+}
+
+.projects {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    min-width: 50px;
+    width: 100px;
+}
+
+.right-label {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+    min-width: 50px;
     width: 100px;
 }

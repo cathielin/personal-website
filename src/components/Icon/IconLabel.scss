@@ -1,13 +1,10 @@
 .label::before {
     content: " ";
     position: absolute;
-    top: 100%; /* At the bottom of the tooltip */
-    left: 50%;
-    // margin-left: -5px;
-    
+    top: 100%;
+    left: 50%;    
     border-width: 13px;
     border-style: dashed;
-    
     border-color: black transparent transparent transparent;
 }
 
@@ -15,7 +12,7 @@
     content: " ";
     z-index: 1;
     position: absolute;
-    top: calc(100% - 1px); /* At the bottom of the tooltip */
+    top: calc(100% - 1px);
     left: calc(50% + 3px);
     border-width: 10px;
     border-style: solid;

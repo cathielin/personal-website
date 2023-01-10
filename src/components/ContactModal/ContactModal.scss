@@ -1,19 +1,19 @@
 .double-list {
-    display: flex;
-    flex-direction: row;
-    column-gap: 30px;
-  }
-  
-  .left-list {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-  
-  }
-  
-  .right-list {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-  
-  }
+  display: flex;
+  flex-direction: row;
+  column-gap: 30px;
+}
+
+.left-list {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+}
+
+.right-list {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+
+}

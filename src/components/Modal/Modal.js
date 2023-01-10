@@ -7,7 +7,7 @@ import {ReactComponent as Strawberry} from '../../images/icon-images/strawberryd
 
 function Modal(props) {
 
-    const { title, iconImage, iconLabel } = props;
+    const { className, title, iconImage, iconLabel } = props;
    
     const [openModal, setOpenModal] = useState(false);
 
@@ -20,7 +20,7 @@ function Modal(props) {
     }
     return (
         <React.Fragment>
-            <IconWithLabel iconImage={iconImage} iconLabel={iconLabel} handlerFunction={handleOpen} />
+            <IconWithLabel className={className} iconImage={iconImage} iconLabel={iconLabel} handlerFunction={handleOpen} />
             {openModal && 
                 <div className="modal">
                     <div className="modal-header">
