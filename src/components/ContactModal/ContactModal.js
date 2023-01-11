@@ -10,7 +10,7 @@ const ContactModal = () => {
 
     return (
         <Modal className="contact" title="contact" iconImage={IconImage()} iconLabel="contact me">
-                <ModalSection title="fastest contact">
+                <ModalSection title="primary contact">
                 <div>
                 ★ <b>email: </b>cathielin@berkeley.edu
                 </div>

@@ -10,7 +10,7 @@ const ResumeModal = () => {
     }
 
     return (
-        <Modal className="resume" title="Resume" iconImage={IconImage()} iconLabel="resume">
+        <Modal className="resume" title="resume" iconImage={IconImage()} iconLabel="resume">
                 <ModalSection title="education">
                 <div>
                     ★ <b>University of California, Berkeley </b><br/>

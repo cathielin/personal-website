@@ -12,7 +12,15 @@ body {
   scrollbar-width: none;
   cursor: crosshair;
 }
-
+a {
+  color: #D499A4;
+  font-weight: 600;
+  text-decoration: none;
+  
+}
+a:hover {
+  color: black;
+}
 body::-webkit-scrollbar {
   display: none;
 }
@@ -181,8 +189,6 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    // max-height: 600px;
-    // max-width: 500px;
   }
   .center-card {
     display: none;
@@ -191,15 +197,7 @@ body::-webkit-scrollbar {
     display: none;
   }
   .center-pic {
-    // position: absolute;
-    // margin: 0;
-    // // padding-top: 100px;
-    // // padding-bottom: 100px;
-    // top: 0;
-    // left: 0;
     margin: auto;
-    // margin-left: 5%;
-    // margin-right: 5%;
     width: 75%;
     height: 100%;
     display: flex;
@@ -220,8 +218,6 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     row-gap: 25px;
-    
-
   }
   .resume-icon {
     position: relative;

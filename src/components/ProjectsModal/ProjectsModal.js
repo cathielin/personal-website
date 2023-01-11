@@ -9,7 +9,7 @@ const ProjectsModal = () => {
     }
 
     return (
-        <Modal className="projects" title="Projects" iconImage={IconImage()} iconLabel="projects">
+        <Modal className="projects" title="projects" iconImage={IconImage()} iconLabel="projects">
                 <ModalSection title="personal website">
                 <div>
                     ★ <b>react, html/css </b><br/>

@@ -8,8 +8,8 @@ const AboutMeModal = () => {
   };
 
   return (
-    <Modal className="about" title="About Me" iconImage={IconImage()} iconLabel="about">
-      <ModalSection title="about me">
+    <Modal className="about" title="about me" iconImage={IconImage()} iconLabel="about me">
+      <ModalSection title="the basics">
         <div>
           Hi, my name is Cathie! I'm currently a 4th year at UC Berkeley
           studying Electrical Engineering and Computer Science and also an aspiring
