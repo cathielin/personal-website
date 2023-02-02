@@ -37,10 +37,18 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    // bottom: -50px;    
+    // bottom: -50px;
+    animation: appear 350ms ease-in 1;    
     
 }
 
+
+@keyframes appear {
+    0%{
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+  }
 
 .modal-header {
     flex-basis: 5%;
