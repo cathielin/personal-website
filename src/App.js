@@ -64,7 +64,6 @@ function App() {
         <div className="icons">
           <div className="about-me-icon">
             <IconWithLabel className="about" iconImage={AboutMeIcon()} iconLabel="about me" setState={setCurrentCard} />
-            {/* <AboutMeModal setState={setCurrentCard} /> */}
           </div>
           <div className="resume-icon">
             <IconWithLabel className="resume" iconImage={ResumeIcon()} iconLabel="resume" setState={setCurrentCard} />
@@ -77,8 +76,6 @@ function App() {
           <div className="contact-me-icon">
             <IconWithLabel className="contact" iconImage={ContactIcon()} iconLabel="contact me" setState={setCurrentCard} />
           </div> 
-
-        
         </div>
        
       </div>

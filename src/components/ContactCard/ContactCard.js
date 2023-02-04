@@ -7,7 +7,7 @@ import {ReactComponent as Fish} from '../../images/icon-images/fish.svg';
 const ContactCard = () => {
 
   return (
-    <CenterCard title="projects">
+    <CenterCard title="contact me">
          <ModalSection title="primary contact">
             <div>
                 ★ <b>email: </b>cathielin@berkeley.edu
