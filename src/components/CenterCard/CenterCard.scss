@@ -197,7 +197,7 @@
 @media screen and (max-width: 600px) {
 
     .card {
-        width: 100%;
+        min-width: 100% !important;
         max-height: 300px;
     }
     .modal {
