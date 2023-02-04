@@ -5,13 +5,15 @@ import IconLabel from '../Icon/IconLabel.js';
 
 function IconWithLabel(props) {
 
-    const { className, iconImage, iconLabel, handlerFunction} = props;
+
+    const { className, iconImage, iconLabel, setState} = props;
 
     return (
         <div className="container">
             <Icon 
                 className="icon" 
-                handlerFunction={handlerFunction} 
+                iconType={className}
+                setState={setState} 
                 iconImage={iconImage} 
                 
             />

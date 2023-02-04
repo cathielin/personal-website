@@ -10,15 +10,15 @@ const ProjectsModal = () => {
 
     return (
         <Modal className="projects" title="projects" iconImage={IconImage()} iconLabel="projects">
-                <ModalSection title="personal website">
-                <div>
-                    ★ <b>react, html/css </b><br/>
-                    ★ responsive design with reusable components <br/>
-                    ★ personally designed icons <br />
-                    
-                </div>
-                </ModalSection>
-            </Modal>
+            <ModalSection title="personal website">
+            <div>
+                ★ <b>react, html/css </b><br/>
+                ★ responsive design with reusable components <br/>
+                ★ personally designed icons <br />
+                
+            </div>
+            </ModalSection>
+        </Modal>
     )
 }
 

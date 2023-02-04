@@ -2,13 +2,15 @@ import React from "react";
 import Modal from "../Modal/Modal.js";
 import ModalSection from "../ModalSection/ModalSection.js";
 import {ReactComponent as RightArrowHeart }  from "../../images/icon-images/rightarrowheart.svg";
-const AboutMeModal = () => {
+const AboutMeModal = (props) => {
+
+  const {setState} = props;
   const IconImage = () => {
     return <RightArrowHeart width="150px" height="200px" />;
   };
 
   return (
-    <Modal className="about" title="about me" iconImage={IconImage()} iconLabel="about me">
+    <Modal className="about" title="about me" iconImage={IconImage()} iconLabel="about me" setState={setState}>
       <ModalSection title="the basics">
         <div>
           Hi, my name is Cathie! I'm currently a 4th year at UC Berkeley

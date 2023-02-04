@@ -21,6 +21,9 @@
     animation-play-state: paused;
     animation-timing-function: cubic-bezier(-6.4, 0.72, -8.265, -2.955);
     transition-timing-function: ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 

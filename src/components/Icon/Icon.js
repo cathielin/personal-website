@@ -3,10 +3,10 @@ import classnames from 'classnames';
 import './Icon.scss';
 
 function Icon(props) {
-    const {className, handlerFunction, iconImage } = props;
+    const {className, setState, iconImage, iconType } = props;
 
     const test = () => {
-        handlerFunction();
+        setState(iconType);
     }
     return (
         <div onClick={test} className={classnames(className, "icon")}>

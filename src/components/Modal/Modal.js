@@ -7,7 +7,7 @@ import {ReactComponent as Strawberry} from '../../images/icon-images/strawberryd
 
 function Modal(props) {
 
-    const { className, title, iconImage, iconLabel } = props;
+    const { className, title, iconImage, iconLabel, setState } = props;
    
     const [openModal, setOpenModal] = useState(false);
 
