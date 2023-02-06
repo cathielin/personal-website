@@ -1,3 +1,23 @@
+// .double-list {
+//     display: flex;
+//     flex-direction: row;
+//     column-gap: 30px;
+// }
+  
+// .left-list {
+// display: flex;
+// flex-grow: 1;
+// flex-direction: column;
+
+// }
+
+// .right-list {
+// display: flex;
+// flex-grow: 2;
+// flex-direction: column;
+
+// }
+
 .split {
     display: flex;
     flex-direction: row;
@@ -21,5 +41,7 @@
     justify-content: center;
     margin: auto;
     min-width: 200px;
+    // max-width: 50%;
+    // max-height: 50%;
     border-radius: 13px;
 }
