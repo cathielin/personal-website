@@ -153,29 +153,6 @@ body::-webkit-scrollbar {
 }
 
 
-// @media screen and (max-width: 1485px) {
-  
-
-//   .resume-icon {
-//     top: 550px;
-//     left: 0px;
-//   }
-
-//   .about-me-icon {
-//     top: 700px;
-//     left: 0px
-//   }
-//   .projects-icon {
-//     top: 550px;
-//     right: 0px;
-    
-//   }
-//   .contact-me-icon {
-//     top: 700px;
-//     right: 0px
-//   }
-// }
-
 @media screen and (max-width: 1485px) {
   .main-app {
     display: flex;
@@ -212,17 +189,9 @@ body::-webkit-scrollbar {
     justify-content: space-between;
     align-items: center;
     row-gap: 20px;
-    // min-height: 400px;
     min-width: 300px;
-    // max-width: 400px;
   }
-  // .icons-row {
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   align-items: center;
-
-  // }
+  
   .resume-icon {
     position: unset;
     order: 1;

@@ -1,26 +1,17 @@
-import React from 'react';
-import './CenterCard.scss';
-import me from '../../images/icon-images/me.jpg';
+import React from "react";
+import "./CenterCard.scss";
+
 function CenterCard(props) {
+  const { title } = props;
 
-    const {title} = props;
-   
-
-    return (
-        <div className="card">
-            <div className="card-header">
-                {title}
-            </div>
-            <div className="modal-content">
-                
-                <div className="modal-text">
-                    {props.children}
-                </div>
-                
-            </div>
-        </div>
-        
-    )
+  return (
+    <div className="card">
+      <div className="card-header">{title}</div>
+      <div className="modal-content">
+        <div className="modal-text">{props.children}</div>
+      </div>
+    </div>
+  );
 }
 
 export default CenterCard;
