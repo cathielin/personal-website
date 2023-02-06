@@ -62,6 +62,26 @@ function App() {
           {returnCard()}
         </div>
         <div className="icons">
+          {/* <div className="icons-row">
+              <div className="resume-icon">
+                <IconWithLabel className="resume" iconImage={ResumeIcon()} iconLabel="resume" setState={setCurrentCard} />
+              </div>
+              <div className="projects-icon">
+                <IconWithLabel className="projects" iconImage={ProjectsIcon()} iconLabel="projects" setState={setCurrentCard} />
+              </div>
+
+              
+              
+          </div>
+          <div className="icons-row">
+              <div className="about-me-icon">
+                <IconWithLabel className="about" iconImage={AboutMeIcon()} iconLabel="about me" setState={setCurrentCard} />
+              </div>
+              <div className="contact-me-icon">
+            <IconWithLabel className="contact" iconImage={ContactIcon()} iconLabel="contact me" setState={setCurrentCard} />
+          </div> 
+          </div> */}
+          
           <div className="about-me-icon">
             <IconWithLabel className="about" iconImage={AboutMeIcon()} iconLabel="about me" setState={setCurrentCard} />
           </div>
@@ -70,8 +90,6 @@ function App() {
           </div>
           <div className="projects-icon">
             <IconWithLabel className="projects" iconImage={ProjectsIcon()} iconLabel="projects" setState={setCurrentCard} />
-
-            {/* <ProjectsModal /> */}
           </div>
           <div className="contact-me-icon">
             <IconWithLabel className="contact" iconImage={ContactIcon()} iconLabel="contact me" setState={setCurrentCard} />

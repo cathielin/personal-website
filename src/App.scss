@@ -120,6 +120,7 @@ body::-webkit-scrollbar {
 .mood {
   position: relative;
   margin: auto;
+  width: 50%;
   min-height: 50px;
   max-height: 100px;
   display: flex;
@@ -152,30 +153,30 @@ body::-webkit-scrollbar {
 }
 
 
-@media screen and (max-width: 1485px) {
+// @media screen and (max-width: 1485px) {
   
 
-  .resume-icon {
-    top: 550px;
-    left: 0px;
-  }
+//   .resume-icon {
+//     top: 550px;
+//     left: 0px;
+//   }
 
-  .about-me-icon {
-    top: 700px;
-    left: 0px
-  }
-  .projects-icon {
-    top: 550px;
-    right: 0px;
+//   .about-me-icon {
+//     top: 700px;
+//     left: 0px
+//   }
+//   .projects-icon {
+//     top: 550px;
+//     right: 0px;
     
-  }
-  .contact-me-icon {
-    top: 700px;
-    right: 0px
-  }
-}
+//   }
+//   .contact-me-icon {
+//     top: 700px;
+//     right: 0px
+//   }
+// }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 1485px) {
   .main-app {
     display: flex;
     flex-direction: column;
@@ -189,13 +190,16 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 20px;
-    width: 90%;
+    row-gap: 50px;
+    width: 80%;
+    
   }
 
   .center-card {
     width: 100%;
-    flex-grow: 1;
+    min-height: 400px;
+    max-height: 400px;
+    display: flex;
   }
   .mood {
     display: none;
@@ -205,11 +209,20 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    min-height: 400px;
-    max-width: 400px;
+    row-gap: 20px;
+    // min-height: 400px;
+    min-width: 300px;
+    // max-width: 400px;
   }
+  // .icons-row {
+  //   display: flex;
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   align-items: center;
+
+  // }
   .resume-icon {
     position: unset;
     order: 1;
@@ -233,8 +246,17 @@ body::-webkit-scrollbar {
   .contact-me-icon {
     position: unset;
     order: 4;
-    max-width: 150px;
+    max-width: 125px;
     max-height: 150px;
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  .center-card {
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+    display: flex;
+  }
 }

@@ -57,14 +57,14 @@
     width: 100px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1485px) {
     .icon {
         width: 100%;
         position: unset;
     }
     .resume {
         position: absolute;
-        top: -180px;
+        top: -165px;
         left: -25px;
         min-width: 50px;
         width: 100px;
@@ -72,7 +72,7 @@
     
     .about {
         position: absolute;
-        top: -200px;
+        top: -165px;
         left: -25px;
         min-width: 50px;
         width: 100px;
@@ -80,15 +80,15 @@
     
     .contact {
         position: absolute;
-        top: -200px;
-        left: -25px;
+        top: -165px;
+        left: -50px;
         min-width: 50px;
         width: 100px;
     }
     
     .projects {
         position: absolute;
-        top: -180px;
+        top: -165px;
         left: -25px;
         min-width: 50px;
         width: 100px;
